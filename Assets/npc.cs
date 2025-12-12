@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class npc : MonoBehaviour
 {
+    public int coins = 10;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
