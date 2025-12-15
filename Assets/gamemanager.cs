@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class npc : MonoBehaviour
+public class gamemanager : MonoBehaviour
 {
-    
+    public int coins = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

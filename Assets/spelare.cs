@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class spelare : MonoBehaviour
 {
+    public GameObject gameManager; 
+
     [SerializeField] private float playerSpeed = 3;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,6 +30,19 @@ public class spelare : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             transform.Translate(Vector3.up * playerSpeed * Time.deltaTime);
+            
         } 
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        Debug.Log("Test: " + other.gameObject.name);
+        if (other.gameObject.tag == "Coins")
+        {
+            gameManager.GetComponent<gamemanager>().coins += 1;
+            other.gameObject.transform.position = new Vector3(Random.Range(-8, 8), Random.Range(-4, 4), 0);
+            
+        }
+
     }
 }

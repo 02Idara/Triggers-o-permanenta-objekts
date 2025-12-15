@@ -1,8 +1,7 @@
 using UnityEngine;
 
-public class npc : MonoBehaviour
+public class coinspawner : MonoBehaviour
 {
-    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
