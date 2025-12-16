@@ -372,7 +372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1245644381}
-  playerSpeed: 3
+  playerSpeed: 5
 --- !u!4 &70547830
 Transform:
   m_ObjectHideFlags: 0
@@ -3094,7 +3094,7 @@ GameObject:
   - component: {fileID: 1391697563}
   m_Layer: 0
   m_Name: "v\xE4ggar"
-  m_TagString: wall
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3125,8 +3125,8 @@ Transform:
   - {fileID: 2121733596}
   - {fileID: 1169641082}
   - {fileID: 1770984543}
-  - {fileID: 2014234494}
   - {fileID: 808394060}
+  - {fileID: 2014234494}
   - {fileID: 1164908462}
   - {fileID: 1116379919}
   - {fileID: 119415397}

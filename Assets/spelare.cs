@@ -34,6 +34,8 @@ public class spelare : MonoBehaviour
         } 
     }
 
+
+
     private void OnCollisionEnter2D(Collision2D other)
     {
         Debug.Log("Test: " + other.gameObject.name);
@@ -41,7 +43,11 @@ public class spelare : MonoBehaviour
         {
             gameManager.GetComponent<gamemanager>().coins += 1;
             other.gameObject.transform.position = new Vector3(Random.Range(-8, 8), Random.Range(-4, 4), 0);
-            
+
+
+
+
+
         }
 
     }
